@@ -1,0 +1,218 @@
+body{
+	background-color: black;
+}
+
+h1{
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+}
+h2{
+    text-align: center;
+	color: white;
+}
+h4{
+	font-size: 16px;
+	font-weight: 700;
+}
+button{
+	color: white;
+	font-size: 8px;
+}
+p{
+	color: black;
+	font-size: 20px;
+   
+}
+div{
+	color: black;
+	font-size: 20px;
+}
+}
+header{
+	padding: 40px 10 10 10;
+	background: black;
+	text-align: center;
+}
+@media(min-width: 750px) {
+	header{
+		text-align: left;
+	}
+}
+
+.borrar-producto{
+	background-color: #00bbbb;
+	border-radius: 20x;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: rgb(71, 71, 71);
+	font-weight: bold;
+}
+
+ul{
+	list-style: none;
+	font-size: 30px;
+}
+
+.hero{
+   background-image: url(../img/hero.jpeg);
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 551px;
+}
+.encabezado{
+  margin: 40px 0;
+  color: black;
+  font-size: 30px;
+
+}
+.submenu{
+	position: relative;
+
+}
+.submenu #carrito{
+	display: none;
+
+}
+.submenu:hover #carrito{
+	display: block;
+	color: #fff;
+	position: absolute;
+	right: 0;
+	top: 100x;
+	z-index: 1;
+	background: #17181b;
+	padding: 20px;
+
+}
+.vacio{
+	padding: 10px;
+	background-color: #0041aa;
+	text-align: center;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+}
+.button{
+	background-color: #00bbbb;
+	color: rgb(255, 255, 255);
+}
+.contenido-hero{
+    margin-top: 80px;
+    color: black;
+}
+.contenido-hero form{
+	position: relative;
+	margin-bottom: 0;
+}
+.contenido-hero form #buscador{
+	height: 50px;
+	margin-bottom: 0;
+}
+.contenido-hero form .submit-buscador{
+	position: absolute;
+	right: 10px;
+	top: 0;
+	height: 100%;
+	padding: 0;
+	display: block;
+	text-indent: -9999px;
+	width: 50px;
+	background-image: url(../img/lupa.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	border: none;
+	
+}
+
+.barra{
+	padding: 40px 0;
+	background: -webkit-linear-gradient(left, #0041aa 0%, #00bbbb 100%);
+}
+
+.barra p{
+	margin: 10;
+	color: #fff;
+	font-size: 20px;
+}
+.icono{
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 40px;
+	background-size: 30px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+@media(min-width: 750px){
+	.icono{
+		margin-bottom: 0;
+
+	}
+}
+
+.icono1{
+	background-image: url(../img/icono-1.png);
+}
+.icono2{
+	background-image: url(../img/icono-2.png);
+}
+.icono3{
+	background-image: url(../img/icono-3.png);
+}
+
+#lista-producto .row{
+	margin-bottom: 20px;
+}
+.agregar-carrito{
+	margin: 10px 0;
+
+}
+.card{
+	text-align: center;
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	background: #1d2124;
+	color:black;
+	font-size: 12px;
+
+}
+@media(min-width 550px){
+	.card{
+		text-align: left;
+	}
+}
+.info-card{
+	padding: 10px 20px;
+	color: black;
+	font-size: 12px;
+}
+.info.card p,
+.card h4{
+	margin-bottom: 5px;
+	color: black;
+}
+.info-card .precio{
+	text-decoration: line-through;
+	font-size: 10px;
+	margin-top: 10px;
+
+}
+.info-card .precio span{
+	font-weight: 700;
+	font-size: 15px;
+
+
+}
+.footer{
+	margin-top: 60px;
+	padding-top: 60px;
+	background: black;
+}
+.footer .menu a {
+	display: block;
+	margin-bottom: 10px;
+	text-decoration: none;
+	font-size: 20px;
+	color: purple;
+}
+

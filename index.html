@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catalogo</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<body>
+	 <header class="header">
+ 	<div class="container">
+        <div class="row">
+          <div class="container">
+    <div class="row">
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="col-sm-8 row"></main>
+        <!-- Carrito -->
+        <aside class="col-sm-4">
+            <h2>Carrito</h2> 
+            <!-- Elementos del carrito -->
+            <ul id="carrito" class="list-group"></ul>
+            <hr>
+            <!-- Precio total -->
+            <p class="text-right">Total: <span id="total"></span>$;</p>
+            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        </aside>
+    </div>
+</div>
+        <div class="four columns">
+          <h1>Dell-Gamer</h1>
+        </div>
+         <div class="two columns u-pull-rigth">
+          <ul>
+            <li class="submenu">
+                  <img src="img/cart.png">
+            </li>
+          </ul>
+         </div>
+      </div>
+ 	</div>
+ </header>
+   <div class="hero">
+  	  <div class="container">
+  		 <div class="row">
+  			 <div class="six columns">
+  			      <div class="contenido-hero">
+  				     <h2>Pide un pedido</h2>
+  				     <p>Todos los pedidos con descuento</p>
+  				     <form>
+  				    	<input class="u-full-width" type="text" placeholder="¿Que te gustaria comprar?" id="buscador">
+  				    	<input type="submit" class="submit-buscador">
+  				     </form>
+  			       </div>	
+  			  </div>
+  		 </div>
+  	  </div>
+    </div>
+
+   <div class="barra">
+      <div class="container">
+      	  <div class="row">
+      	  	  <div class="four columns icono icono1">
+      	  	  	  <p>-100 productos diferentes-<br>Explorar los nuevos prodcutos</p>
+      	  	  </div>
+      	  	  <div class="four columns icono icono2">
+      	  	  	  <p>-Expertos-<br>Prueba las nuevas combinaciones</p>
+      	  	  </div>
+      	  	   <div class="four columns icono icono3">
+      	  	  	  <p>-Envio-<br>Gratis hasta tu casa</p>
+      	  	  </div>
+      	  </div>
+      </div> 	
+   </div>
+
+   <div id="Lista-catalogo" class="container">
+   	   <h1 class="encabezado">Pedidos en linea</h1>
+   	   <div class="row">
+   	   	   <div class="four columns">
+   	   	   	   <div class="card">
+   	   	   	   	  <img src="img/product1.jpg" class="u-full-width">
+   	   	   	   	   <div class="info-card">
+   	   	   	   	   	  <h4>Pc Gamer Sencilla</h4>
+   	   	   	   	   	   <p>Envio Gratis</p>
+   	   	   	   	   	   <img src="img/estrellas.png">
+   	   	   	   	   	    <p class="Precio">$10<span class="u-pull-rigth">$15</span></p>
+   	   	   	   	   	      <a href="#" class="u-full-width button-primary button input agregra-carrito" data-id="1">Agregar al carrito</a>
+   	   	   	   	   </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   	   <div class="four columns">
+   	   	   	   <div class="card">
+   	   	   	   	  <img src="img/product2.jpg" class="u-full-width">
+   	   	   	   	   <div class="info-card">
+   	   	   	   	   	  <h4>Pc Gamer Media</h4>
+   	   	   	   	   	   <p>Envio Gratis</p>
+   	   	   	   	   	   <img src="img/estrellas.png">
+   	   	   	   	   	    <p class="Precio">$15<span class="u-pull-rigth">$15</span></p>
+   	   	   	   	   	      <a href="#" class="u-full-width button-primary button input agregra-carrito" data-id="2">Agregar al carrito</a>
+   	   	   	   	   </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   	   <div class="four columns">
+   	   	   	   <div class="card">
+   	   	   	   	  <img src="img/product3.jpg" class="u-full-width">
+   	   	   	   	   <div class="info-card">
+   	   	   	   	   	  <h4>Pc Gamer Alta</h4>
+   	   	   	   	   	   <p>Envio Gratis</p>
+   	   	   	   	   	   <img src="img/estrellas.png">
+   	   	   	   	   	    <p class="Precio">$18<span class="u-pull-rigth">$15</span></p>
+   	   	   	   	   	      <a href="#" class="u-full-width button-primary button input agregra-carrito" data-id="3">Agregar al carrito</a>
+   	   	   	   	   </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   </div>
+   	     <div class="row">
+   	   	   <div class="four columns">
+   	   	   	   <div class="card">
+   	   	   	   	  <img src="img/product4.jpg" class="u-full-width">
+   	   	   	   	   <div class="info-card">
+   	   	   	   	   	  <h4>Pc Gamer Sencilla</h4>
+   	   	   	   	   	   <p>Envio Gratis</p>
+   	   	   	   	   	   <img src="img/estrellas.png">
+   	   	   	   	   	    <p class="Precio">$11<span class="u-pull-rigth">$15</span></p>
+   	   	   	   	   	      <a href="#" class="u-full-width button-primary button input agregra-carrito" data-id="4">Agregar al carrito</a>
+   	   	   	   	   </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   	   <div class="four columns">
+   	   	   	   <div class="card">
+   	   	   	   	  <img src="img/product5.jpg" class="u-full-width">
+   	   	   	   	   <div class="info-card">
+   	   	   	   	   	  <h4>Pc Gamer Media</h4>
+   	   	   	   	   	   <p>Envio Gratis</p>
+   	   	   	   	   	   <img src="img/estrellas.png">
+   	   	   	   	   	    <p class="Precio">$12<span class="u-pull-rigth">$15</span></p>
+   	   	   	   	   	      <a href="#" class="u-full-width button-primary button input agregra-carrito" data-id="5">Agregar al carrito</a>
+   	   	   	   	   </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   	   <div class="four columns">
+   	   	   	   <div class="card">
+   	   	   	   	  <img src="img/product1.jpg" class="u-full-width">
+   	   	   	   	   <div class="info-card">
+   	   	   	   	   	  <h4>Pc Gamer Alta</h4>
+   	   	   	   	   	   <p>Envio Gratis</p>
+   	   	   	   	   	   <img src="img/estrellas.png">
+   	   	   	   	   	    <p class="Precio">$11<span class="u-pull-rigth">$15</span></p>
+   	   	   	   	   	      <a href="#" class="u-full-width button-primary button input agregra-carrito" data-id="6">Agregar al carrito</a>
+   	   	   	   	   </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   </div>
+   	      <div class="row">
+   	   	   <div class="four columns">
+   	   	   	   <div class="card">
+   	   	   	   	  <img src="img/product2.jpg" class="u-full-width">
+   	   	   	   	   <div class="info-card">
+   	   	   	   	   	  <h4>Pc Gamer Sencilla</h4>
+   	   	   	   	   	   <p>Envio Gratis</p>
+   	   	   	   	   	   <img src="img/estrellas.png">
+   	   	   	   	   	    <p class="Precio">$13<span class="u-pull-rigth">$15</span></p>
+   	   	   	   	   	      <a href="#" class="u-full-width button-primary button input agregra-carrito" data-id="7">Agregar al carrito</a>
+   	   	   	   	   </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   	   <div class="four columns">
+   	   	   	   <div class="card">
+   	   	   	   	  <img src="img/product3.jpg" class="u-full-width">
+   	   	   	   	   <div class="info-card">
+   	   	   	   	   	  <h4>Pc Gamer Media</h4>
+   	   	   	   	   	   <p>Envio Gratis</p>
+   	   	   	   	   	   <img src="img/estrellas.png">
+   	   	   	   	   	    <p class="Precio">$12<span class="u-pull-rigth">$15</span></p>
+   	   	   	   	   	      <a href="#" class="u-full-width button-primary button input agregra-carrito" data-id="8">Agregar al carrito</a>
+   	   	   	   	   </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   	   <div class="four columns">
+   	   	   	   <div class="card">
+   	   	   	   	  <img src="img/product4.jpg" class="u-full-width">
+   	   	   	   	   <div class="info-card">
+   	   	   	   	   	  <h4>Pc Gamer Alta</h4>
+   	   	   	   	   	   <p>Envio Gratis</p>
+   	   	   	   	   	   <img src="img/estrellas.png">
+   	   	   	   	   	    <p class="Precio">$13<span class="u-pull-rigth">$15</span></p>
+   	   	   	   	   	      <a href="#" class="u-full-width button-primary button input agregra-carrito" data-id="9">Agregar al carrito</a>
+   	   	   	   	   </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   </div>
+   	      <div class="row">
+   	   	   <div class="four columns">
+   	   	   	   <div class="card">
+   	   	   	   	  <img src="img/product5.jpg" class="u-full-width">
+   	   	   	   	   <div class="info-card">
+   	   	   	   	   	  <h4>Pc Gamer Sencilla</h4>
+   	   	   	   	   	   <p>Envio Gratis</p>
+   	   	   	   	   	   <img src="img/estrellas.png">
+   	   	   	   	   	    <p class="Precio">$12<span class="u-pull-rigth">$15</span></p>
+   	   	   	   	   	      <a href="#" class="u-full-width button-primary button input agregra-carrito" data-id="10">Agregar al carrito</a>
+   	   	   	   	   </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   	   <div class="four columns">
+   	   	   	   <div class="card">
+   	   	   	   	  <img src="img/product2.jpg" class="u-full-width">
+   	   	   	   	   <div class="info-card">
+   	   	   	   	   	  <h4>Pc Gamer Media</h4>
+   	   	   	   	   	   <p>Envio Gratis</p>
+   	   	   	   	   	   <img src="img/estrellas.png">
+   	   	   	   	   	    <p class="Precio">$11<span class="u-pull-rigth">$15</span></p>
+   	   	   	   	   	      <a href="#" class="u-full-width button-primary button input agregra-carrito" data-id="11">Agregar al carrito</a>
+   	   	   	   	   </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   	   <div class="four columns">
+   	   	   	   <div class="card">
+   	   	   	   	  <img src="img/product3.jpg" class="u-full-width">
+   	   	   	   	   <div class="info-card">
+   	   	   	   	   	  <h4>Pc Gamer Alta</h4>
+   	   	   	   	   	   <p>Envio Gratis</p>
+   	   	   	   	   	   <img src="img/estrellas.png">
+   	   	   	   	   	    <p class="Precio">$14<span class="u-pull-rigth">$15</span></p>
+   	   	   	   	   	      <a href="#" class="u-full-width button-primary button input agregra-carrito" data-id="12">Agregar al carrito</a>
+   	   	   	   	   </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   </div>
+   </div>
+  <footer class="footer">
+  	<div class="container">
+        <div class="row">
+        	<div class="four columns">
+        		<nav class="menu">
+        			<a class="enlace" href="#">Pedidos a domicilio</a>
+        			<a class="enlace" href="#">Pedidos en linea</a>
+        			<a class="enlace" href="#">Pedidos por telefono</a>
+        			<a class="enlace" href="#">Pedidos Menu</a>
+        			<a class="enlace" href="#">Componentes</a>
+        		</nav>
+        	</div>
+        	<div class="four columns">
+        		<nav class="menu">
+        			<a class="enlace" href="#">Fabrica/-Dell Company</a>
+        			<a class="enlace" href="#">Ubicacion/-Rio Lindo, barrio el centro esquina opuesta frente al Banco Atlantida</a>
+        			<a class="enlace" href="#">Telefono/-98397191</a>
+        			<a class="enlace" href="#">Facebook/-Dellgamer</a>
+        			<a class="enlace" href="#">Instagram/-Delgam_er12</a>
+        		</nav>
+        	</div>
+        </div>
+    </div>
+  	</footer>
+
+
+	<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>
